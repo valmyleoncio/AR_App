@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity
 
                     Canvas canvas = new Canvas(combinedBitmap);
                     canvas.drawBitmap(cameraBitmap, 0, 0, null);
-                    canvas.drawBitmap(scaledImageViewBitmap, x + xCoOrdinate, y + yCoOrdinate, null);
+                    canvas.drawBitmap(scaledImageViewBitmap, x, y, null);
 
                     FileOutputStream outputStream = new FileOutputStream(file);
                     combinedBitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
